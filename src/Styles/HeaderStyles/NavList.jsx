@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const NavContainer = styled.nav`
     display: flex;
@@ -16,7 +17,7 @@ export const NavList = styled.ul`
     list-style: none;
     
     `
-export const NavListAnchor = styled.a`
+export const NavListAnchor = styled(Link)`
     text-decoration: none;
     font-size: 1.8em;
     font-weight: 700;

@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const ArticleBanner = styled.article`
     background-color: #495E57;
-    height: 20rem;
+    height: 22rem;
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
     `;
 
 export const Container = styled.div`
