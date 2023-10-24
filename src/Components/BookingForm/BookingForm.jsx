@@ -12,6 +12,7 @@ import {
   FormSelect,
   FormButton,
   Background,
+  ErrorP,
 } from "../../Styles/BookingStyles/BookingStyles";
 
 const schema = yup.object().shape({
@@ -72,7 +73,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
                 {...register("firstName")}
               />
 
-              <p>{errors.firstName?.message}</p>
+              <ErrorP>{errors.firstName?.message}</ErrorP>
 
               <label htmlFor="lastName">Last Name</label>
               <FormField
@@ -83,7 +84,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
                 {...register("lastName")}
               />
 
-              <p>{errors.lastName?.message}</p>
+              <ErrorP>{errors.lastName?.message}</ErrorP>
 
               <label htmlFor="email">Email</label>
               <FormField
@@ -94,7 +95,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
                 {...register("email")}
               />
 
-              <p>{errors.email?.message}</p>
+              <ErrorP>{errors.email?.message}</ErrorP>
 
               <label htmlFor="res-date">Choose date</label>
               <FormField
@@ -105,7 +106,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
                 {...register("date")}
               />
 
-              <p>{errors.date?.message}</p>
+              <ErrorP>{errors.date?.message}</ErrorP>
 
               <label htmlFor="res-time">Choose time</label>
               <FormSelect
@@ -121,7 +122,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
                 ))}
               </FormSelect>
 
-              <p>{errors.time?.message}</p>
+              <ErrorP>{errors.time?.message}</ErrorP>
 
               <label htmlFor="guests">Number of guests</label>
               <FormField
@@ -135,7 +136,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
                 {...register("guests")}
               />
 
-              <p>{errors.guests?.message}</p>
+              <ErrorP>{errors.guests?.message}</ErrorP>
 
               <label htmlFor="occasion">Occasion</label>
               <FormSelect
@@ -148,7 +149,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
                 <option value="Anniversary">Anniversary</option>
               </FormSelect>
 
-              <p>{errors.occasion?.message}</p>
+              <ErrorP>{errors.occasion?.message}</ErrorP>
 
               <FormButton type="submit">Make Your reservation</FormButton>
             </FormInContainer>

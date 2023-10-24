@@ -10,7 +10,16 @@ import {
   SectionP,
 } from "../../Styles/BannerStyles/BannerStyles";
 
+import { useNavigate } from "react-router-dom";
+
 export default function Banner() {
+
+  const navigate = useNavigate();
+
+  function handleClick() {
+      navigate("/booking");
+    }
+
   return (
     <ArticleBanner>
       <Container>
@@ -23,7 +32,7 @@ export default function Banner() {
                 We are a family owned Mediterranean restaurant, focused on
                 traditional recipes served with a modern twist.
               </SectionP>
-              <ArticleButton>Reserve a Table</ArticleButton>
+              <ArticleButton onClick={handleClick}>Reserve a Table</ArticleButton>
             </section>
           </ContainerHeader>
           <ArticleImg />

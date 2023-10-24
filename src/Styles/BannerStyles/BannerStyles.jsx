@@ -59,4 +59,5 @@ export const ArticleButton = styled.button`
     width: 10rem;
     font-weight: 700;
     font-size: 1.5em;
+    cursor: pointer;
     `;

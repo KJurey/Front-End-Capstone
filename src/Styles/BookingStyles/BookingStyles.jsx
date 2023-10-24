@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Background = styled.div`
-    height: 100vh;
+    height: auto;
     width: auto;
     background: space repeat center/5% url("/src/assets/Little_Lemon.png");
     `;
@@ -65,6 +65,12 @@ export const FormButton = styled.button`
     background-color: #F4CE14;
     font-size: 1.2rem;
     color: #49SE57;
+    cursor: pointer;
+    color: white;
+    `;
+
+export const ErrorP = styled.p`
+    color: red;
     `;
 
 export const Header1 = styled.h1`
