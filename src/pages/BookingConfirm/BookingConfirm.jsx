@@ -17,7 +17,7 @@ export default function BookingConfirm() {
             <ConfirmBooking>
               <Header1>Your reservation is complete!</Header1>
               <BookingP>
-                You will receive shortly a comfirmation email about your
+                You will receive shortly a confirmation email about your
                 reservation.
               </BookingP>
               <BookingP>
