@@ -1,6 +1,6 @@
 import {
   Background,
-  MainFormContainer,
+  MainFormContainer2,
   MainOutContainer,
   CardContainer,
   Header1,
@@ -11,7 +11,7 @@ import {
 export default function BookingConfirm() {
   return (
     <Background>
-      <MainFormContainer>
+      <MainFormContainer2>
         <MainOutContainer>
           <CardContainer>
             <ConfirmBooking>
@@ -26,7 +26,7 @@ export default function BookingConfirm() {
             </ConfirmBooking>
           </CardContainer>
         </MainOutContainer>
-      </MainFormContainer>
+      </MainFormContainer2>
     </Background>
   );
 }

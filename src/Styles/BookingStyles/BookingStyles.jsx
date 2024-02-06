@@ -3,10 +3,18 @@ import styled from "styled-components";
 export const Background = styled.div`
     height: auto;
     width: auto;
-    background: space repeat center/5% url("/src/assets/Little_Lemon.png");
+    background: space repeat center/5% url("/src/assets/little_lemon.png");
     `;
 
 export const MainFormContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    `;
+
+export const MainFormContainer2 = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
