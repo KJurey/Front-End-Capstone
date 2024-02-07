@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Background = styled.div`
     height: auto;
     width: auto;
-    background: space repeat center/5% url("src/assets/little_lemon.png")
+    background: space repeat center/5% url("little_lemon.png")
     `;
 
 export const MainFormContainer = styled.div`
